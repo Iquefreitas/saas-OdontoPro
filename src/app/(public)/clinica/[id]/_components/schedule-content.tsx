@@ -15,7 +15,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { ScheduleTimeList } from './schedule-time-list'
 import { createNewAppointment } from '../_actions/create-appointment'
 import { toast } from 'sonner'
-import { Prisma } from "@/generated/prisma";
+import { Prisma } from "@prisma/client";
 
 type UserWithServiceAndSubscription = Prisma.UserGetPayload<{
   include: {
